@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Food : MonoBehaviour
@@ -15,7 +14,6 @@ public class Food : MonoBehaviour
         if(other.tag == "Ladybug")
         {
             gameObject.SetActive(false);
-
         }
     }
 
@@ -24,7 +22,6 @@ public class Food : MonoBehaviour
         if (other.tag == "Ladybug")
         {
             gameObject.SetActive(false);
-
         }
     }
 

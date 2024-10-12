@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -8,9 +6,6 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public float jumpSpeed;
 
-
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.A))
@@ -35,5 +30,4 @@ public class PlayerMovement : MonoBehaviour
             transform.position = transform.position += transform.up * -moveSpeed * Time.deltaTime;
         }
     }
-
 }

@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+
 public class PointCount : MonoBehaviour
 {
     public int Point;
     public TextMeshProUGUI PointText;
+
     public void PointIncrease()
     {
         Point = Point + 10;
@@ -18,17 +18,6 @@ public class PointCount : MonoBehaviour
         PointText.text = Point.ToString();
 
    }
-    void Awake()
-    {
-        GameObject[] objs = GameObject.FindGameObjectsWithTag("Points");
-
-        if (objs.Length > 1)
-        {
-            Destroy(this.gameObject);
-        }
-
-        DontDestroyOnLoad(this.gameObject);
-    }
 
     private void Start()
     {
